@@ -10,16 +10,20 @@ package fr.diginamic.factory;
 public class ObjetConnecteFactory {
 	
 	public static ObjetConnecte getInstance(TypeObjetConnecte type, int limitVolts) {
-		if (type.equals(TypeObjetConnecte.TELEPHONE_PORTABLE)) {
-			return new TelephonePortable(limitVolts);
+		ObjetConnecte objet = null;
+		if (type == null) {
+			// choix arbitraire
+			objet = new TelephonePortable(limitVolts);
+		} else if (type.equals(TypeObjetConnecte.TELEPHONE_PORTABLE)) {
+			objet = new TelephonePortable(limitVolts);
 		} else if (type.equals(TypeObjetConnecte.TABLETTE)) {
-			return new Tablette(limitVolts);
+			objet = new Tablette(limitVolts);
 		} else if (type.equals(TypeObjetConnecte.ENCEINTE_CONNECTEE)) {
-			return new EnceinteConnectee(limitVolts);
+			objet = new EnceinteConnectee(limitVolts);
 		} else {
-			return null;
+			objet = null;
 		}
-		
+		return objet;
 	}
 
 }
