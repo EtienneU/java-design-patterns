@@ -9,7 +9,7 @@ package fr.diginamic.factory;
  */
 public class Tablette extends ObjetConnecte {
 
-	public Tablette(TypeObjetConnecte type, int limiteVolts) {
-		super(type, limiteVolts);
+	public Tablette(int limiteVolts) {
+		super(TypeObjetConnecte.TABLETTE, limiteVolts);
 	}
 }

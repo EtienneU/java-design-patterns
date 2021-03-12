@@ -9,8 +9,8 @@ package fr.diginamic.factory;
  */
 public class TelephonePortable extends ObjetConnecte {
 
-	public TelephonePortable(TypeObjetConnecte type, int limiteVolts) {
-		super(type, limiteVolts);
+	public TelephonePortable(int limiteVolts) {
+		super(TypeObjetConnecte.TELEPHONE_PORTABLE, limiteVolts);
 	}
 
 	

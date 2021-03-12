@@ -11,11 +11,11 @@ public class ObjetConnecteFactory {
 	
 	public static ObjetConnecte getInstance(TypeObjetConnecte type, int limitVolts) {
 		if (type.equals(TypeObjetConnecte.TELEPHONE_PORTABLE)) {
-			return new TelephonePortable(type, limitVolts);
+			return new TelephonePortable(limitVolts);
 		} else if (type.equals(TypeObjetConnecte.TABLETTE)) {
-			return new Tablette(type, limitVolts);
+			return new Tablette(limitVolts);
 		} else if (type.equals(TypeObjetConnecte.ENCEINTE_CONNECTEE)) {
-			return new EnceinteConnectee(type, limitVolts);
+			return new EnceinteConnectee(limitVolts);
 		} else {
 			return null;
 		}

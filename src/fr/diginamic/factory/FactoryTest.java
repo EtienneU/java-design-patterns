@@ -7,7 +7,7 @@ package fr.diginamic.factory;
  * @author EtienneUrbano
  *
  */
-public class appFactory {
+public class FactoryTest {
 
 	/**
 	 * @param args

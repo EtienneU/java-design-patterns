@@ -9,8 +9,8 @@ package fr.diginamic.factory;
  */
 public class EnceinteConnectee extends ObjetConnecte {
 
-	public EnceinteConnectee(TypeObjetConnecte type, int limiteVolts) {
-		super(type, limiteVolts);
+	public EnceinteConnectee(int limiteVolts) {
+		super(TypeObjetConnecte.ENCEINTE_CONNECTEE, limiteVolts);
 	}
 
 }

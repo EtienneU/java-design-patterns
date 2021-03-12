@@ -7,7 +7,7 @@ package fr.diginamic.factory;
  * @author EtienneUrbano
  *
  */
-public class ObjetConnecte {
+public abstract class ObjetConnecte {
 	
 	TypeObjetConnecte type;
 	protected int limiteVolts;
